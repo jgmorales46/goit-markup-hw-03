@@ -226,7 +226,8 @@ article p{
     flex-wrap: wrap;
     gap: 30px;
     flex-direction: row;
-    
+    padding: 50px;
+    margin: 50px;
     justify-content: center;
     align-content: flex-start;
     box-sizing: border-box;
