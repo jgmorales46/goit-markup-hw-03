@@ -226,8 +226,8 @@ article p{
     flex-wrap: wrap;
     gap: 30px;
     flex-direction: row;
-    padding: 120px;
-    margin: 120px;
+    padding: 80px;
+    margin: 80px;
     justify-content: center;
     align-content: flex-start;
     box-sizing: border-box;
