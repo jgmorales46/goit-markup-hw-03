@@ -111,20 +111,7 @@ header .address{
     
 }
 
-/*  footer estilos p */
-footer{
-    background: #2F303A;
-    
-}
-.footer{
-    line-height: 24px;
 
-}
-.footer p{
-    font-size: 14px;
-    font-weight: 400;
-    color: #FFFFFF;
-}
 
 /**********************************************************************************************************************************************************/
                      /* estilo botones */
@@ -152,19 +139,7 @@ footer{
 }
 
 
-/******************************* estilos foooter***********************/
-                        
-.box a{
 
-    color: #212121;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.box a:hover {
-    color: #2196F3;
-    text-decoration: underline;
-}
 
 
 
@@ -280,3 +255,37 @@ height: 294px;
 .menu .menu-correo{
     padding-left: 400px;
 }
+
+/*  footer estilos p */
+footer{
+    background: #2F303A;
+    
+}
+.footer{
+    line-height: 24px;
+    height: 252px;
+    width: 90%;
+    max-width: 100%;
+
+}
+
+.footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+.footer li .box{
+    
+    text-align: left;
+    color: #212121;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer li .box:hover{
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+
