@@ -28,6 +28,7 @@ body{
     font-size: 26px;
     line-height: 31px;
     font-weight: 700;
+    text-align: left;
 }
 
 header{
@@ -246,3 +247,36 @@ height: 294px;
     border-bottom: 1px solid #EEEEEE;
 }
 
+
+.address .correo{
+    display: block;
+    text-align: center;
+    
+}
+.address .telefono{
+    display: block;
+    text-align: right;
+    
+}
+.menu{
+    height: 50px;
+    width: 90%;
+    max-width: 100%;
+    
+  
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a{
+     padding: 30px; 
+    
+}
+
+.menu .webstudio{
+    padding:100px ;
+}
+.menu .menu-correo{
+    padding-left: 400px;
+}
