@@ -1,145 +1,301 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-    
-   
-    list-style: none;
-  
-     
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
 }
+
+/* estilos generales   */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.pv-main {
+    padding: 40px 0;
+}
+
+.hero {
+    background-color: var(--main--backgraundSecundario);
+}
+
+:root{
+    --main--primaryColor: rgb(33, 150, 243);
+    --main--secundario:rgb(33, 33, 33);
+    --main--textColor:rgb(255, 255, 255);
+    --main--backgraundSecundario:rgb(47, 48, 58);
+    --main--textSecundario:rgb(117, 117, 117);
+    
+}
+
 
 body{
-    font-family:  'Roboto', 'Releway', sans-serif;
-    background: #FFFFFF;
-    line-height: 1.5;
     
-   
+    font-family:  'Roboto', 'Releway', sans-serif;
+    background: var(--main--textColor);
+    line-height: 1.5;
+   /* position: relative; */
     
 }
-
-
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /*  estilos header links y botones */
                        /*estilo links header  */
+.navigation__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__navigation {
+    display: flex;
+    column-gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.hero__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+
+/* Font Stylesk */
+.link-font-style {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+}
+
+
 .webstudio {
-    color: #2196F3;
+    color: var(--main--primaryColor);
     font-size: 26px;
     line-height: 31px;
     font-weight: 700;
-    text-align: left;
-}
-
-header{
-    border-bottom: 1px solid #ECECEC;
 }
 header a{
-    color: #212121;
-    text-decoration: none;
+    color: var(--main--secundario);
+    
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    
 }
 
 header a:hover{
-    color:#2196F3;
-    text-decoration: underline;
+    color: var(--main--primaryColor);
+   
 }
 
-header .address{
-    text-align: center;
-    
-}
+                    
 
-                      /* estitulos titulo index nav */
 
-.nav-titulo{
-    background: #2F303A;
-}
 
-.title{
+
+                     /*  estilos para titulo y boton debajo del titulo segundo sectiom*/
+                     
+                     
+.title {
     font-size: 44px;
     line-height: 60px;
-    font-weight: 900;
-    color:#FFFFFF
+    color: var(--main--textColor);
+}
+
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .button {
+
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main--secundario);
+    background: var(--main--textColor);
+    border-radius: 4px;
+    padding: 10px 20px;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.buttons .button:hover {
+
+    background: var(--main--primaryColor);
+    color: var(--main--textColor);
+    padding: 10px 20px;
+
+}
+
+.buttons .button:focus {
+
+    background: var(--main--primaryColor);
+    color: var(--main--textColor)
 }
 
 
-                     /*  estilos para titulos y parrafos index */
 
-.section-parrafos h3 {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    color: #212121;
-}
-.section-parrafos p{
-    font-size: 14px;
-        line-height: 24px;
-        font-weight: 400;
-        color: #757575;
+.hero__texts {
+    color: var(--detail-color);
+        display: flex;
+        flex-direction: column;
+        width: 515px;
 }
 
-.titulos-segundarios{
-    font-size: 36;
-    line-height: 42px;
-    font-weight: 700;
-    color: #212121;
+
+/*estilos tercera seccion*/
+
+
+.about__gallery {
+    display: flex;
+    gap: 30px;
+    
 }
 
-/* estilos de out team */
+/* estilos cuarta section imagenes de referencia*/
 
-.section-team{
-    background: #F5F4FA;
+
+.gallery__images{
+    display: flex;
+    gap: 30px;
 }
 
-.section-team h4{
-    color: #212121;
+
+/* estilos quinto section  */
+
+.gallery__progamadores {
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+
+.card {
+    background: var(--main--textColor);
+}
+
+.card h4 {
+    
+
+    text-align: center;
+    color: var(--main--secundario);
     font-size: 16px;
     font-weight: 500;
-    
-        line-height: 19px;
-    
+
+    line-height: 19px;
+
 }
-.section-team p{
+
+.card p {
+ 
+        text-align: center;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
-    color: #757575;
-    
+    color: var(--main--textSecundario);
+
+}
+
+.card__item {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+.parrafos h3 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: var(--main--secundario)
+}
+.parrafos p{
+    font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--main--textSecundario)
+}
+
+.titulos-segundarios{
+    display: flex;
+    justify-content: center;
+    font-size: 36;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--main--secundario)
+}
+
+
+/*  footer estilos p */
+
+footer{
+    background: var(--main--backgraundSecundario);
+}
+
+.footer {
+    padding: 60px;
+    line-height: 24px;
+   
+}
+
+.footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--main--textColor)
+}
 
 /**********************************************************************************************************************************************************/
                      /* estilo botones */
 
-.buttons .button {
-    
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    background: #F5F4FA;
-    border-radius: 4px;
-  
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    
-    
+
+
+
+
+                          /*  estilos foooter*/
+                          /*revisar este codigo, el porque no me aparece la mano del cursor */
+
+.box_header a{
+
+     color: var(--main--textSecundario);
 }
 
-
-.buttons .button:hover {
+.box_header a:hover {
+    color: var(--main--primaryColor);
     
-    background: #2196F3;
-    color: white;
-
 }
-
-
-
 
 
 
@@ -154,138 +310,85 @@ article h4{
 
 article p{
     font-size: 16px;
-    color: #757575;
+    color: var(--main--textSecundario);
     line-height: 30px;
 }
 
+.header_menu.current{
+    color: var(--main--primaryColor);
+}
 
-/**************sirve para centrar el contenido y alinaer los elemtos para el contenedor principal*******************************/
+.header_portfolio.current{
+    color: var(--main--primaryColor);
+}
 
-.flex-container{
+.box_footer{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    flex-direction: column;
 }
-.flex-container li{
-    margin: 30px;
-}
+.box_footer a {
 
-/*****************************centra los titulos*************************************************************/
-.title{
-    text-align: center; 
-}
-
-.titulos-segundarios{
-    text-align: center; 
-}
-
-
-/*******************centra los botones y les da separacion uno del otro***********************************/
-
-  
-.buttons{
-    display:flex ;
-    align-items: flex-start;
-    justify-content: center;
-    letter-spacing: 0.06em;
-    
-}
-.button{
-    margin: 5px;
-}
-
-/************centra las imagenes de portafolio y les da sepacion una de otra***************/
-
-.portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    flex-direction: row;
-    padding: 70px;
-    margin: 70px;
-    justify-content: center;
-    align-content: flex-start;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    
-}
-.portfolio img{
-    
-width: 370px;
-height: 294px;
-}
-.portfolio li{
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-
-.address .correo{
-    display: block;
-    text-align: center;
-    
-}
-.address .telefono{
-    display: block;
-    text-align: right;
-    
-}
-.menu{
-    height: 50px;
-    width: 90%;
-    max-width: 100%;
-    
-  
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-.menu li a{
-     padding: 30px; 
-    
-}
-
-.menu .webstudio{
-    padding:100px ;
-}
-.menu .menu-correo{
-    padding-left: 400px;
-}
-
-/*  footer estilos p */
-footer{
-    background: #2F303A;
-    
-}
-.footer{
-    line-height: 24px;
-    height: 252px;
-    width: 90%;
-    max-width: 100%;
-
-}
-
-.footer p{
-    font-size: 14px;
-    font-weight: 400;
-    color: #FFFFFF;
-
-}
-.footer li .box{
-    
-    text-align: left;
-    color: #212121;
+    color: var(--main--secundario);
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer li .box:hover{
-    color: #2196F3;
-    text-decoration: underline;
+.box_footer a:hover {
+    color: var(--main--primaryColor);
+    
+}
+.text__footer p{
+    margin: 0px;
 }
 
 
+/* -------------------------------------------_______________estilos portafolio__________________________________________-----------------------------------*/
+
+.buttom__portafolio{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.container__porfolio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container__botones__portafolio{
+padding: 35px;
+}
+.item {
+    /*  Set the width of the elements  */
+    flex-basis: calc((100% - 20px) / 3);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.item h4{
+    padding-left: 25px;
+    color: var(--main--secundario);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        
+        /* 200% */
+        letter-spacing: 1.08px;
+}
+
+.item p {
+    padding-left: 25px;
+    color:var(--main--textSecundario);
+        font-family: Roboto;
+        font-size: 16px;
+       
+        font-weight: 400;
+        
+        /* 187.5% */
+        letter-spacing: 0.48px;
+}
+.portfolio__imagenes {
+
+    padding: 35px;
+}
+ 

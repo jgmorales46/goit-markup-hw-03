@@ -4,36 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- Primeramente el normalizador -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>WEb Studio</title>
   </head>
   <body>
-    <header class="header">
 
-      <ul class="menu">
-        <li><a class="webstudio" href="./index.html">WebStudio</a> </li>
-        <li><a  class="menu-index" href="./index.html">Studio</a></li>
-        <li><a class="menu-portfolio" href="./portfolio.html">Portafolio</a></li>
-        <li><a class="menu-contact" href="./contacts.html">contacts</a></li>
-        <li><a class="menu-correo" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="menu-telefono" href="tel:+12127724150">+1 212-772-4150</a></li>
-      </ul>
-    </nav>
-   
-    
-  </header>
+
+    -------------------------
+    <header>
+      <nav class="container navigation__container pv-main">
+
+
+        <ul class="hero__navigation list p-0">
+          <li><a class="webstudio link link-font-style" href="./index.html">WebStudio</a>
+          </li>
+
+          <li><a class="link link-font-style header_menu current" href="./index.html" >Studio</a>
+          </li>
+
+          <li><a class="link link-font-style" href="./portfolio.html" >Portafolio</a>
+          </li>
+
+          <li><a class="link link-font-style" href="./contacts.html">contacts</a></li>
+
+        </ul>
+
+
+
+        <ul class="hero__contact box_header list p-0">
+          
+          <li><a class="link link-font-style" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+
+          <li><a class="link link-font-style" href="tel:+12127724150">+1 212-772-4150</a>
+          </li>
+        </ul>
+
+
+      </nav>
+    </header>
+
+
+----------------------------------------
 
     <main>
-      <nav class="nav-titulo">
-        <h1 class="title">EFFECTIVE SOLUTIONS <br>FOR YOUR BUSINESS</br> </h1>
-        <div class="buttons">
-          <button type="button" class="button">Request our service</button>
-        </div>
-      </nav>
 
-      <section class="section-parrafos">
-        <ul class="flex-container">
+      
+      <section class="hero section">
+        <div class="container hero__texts">
+          <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+
+          <div class="buttons flex__center">
+            <button type="button" class="button">Request our service</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="parrafos section">
+        <ul class="container about__gallery list p-0">
           <li>
             <h3>ATTENTION TO DETAILS</h3>
             <p>
@@ -68,104 +110,126 @@
         </ul>
       </section>
 
-      <section class="section">
-        <h2 class="titulos-segundarios">What we do</h2>
-        <ul class="flex-container">
-          <li class="card-imagen1">
-            <img
-              src="images/img.jpg"
-              alt="primer imagen"
-              
-            />
-          </li>
-          <li class="card-imagen2">
-            <img
-              src="images/img (1).jpg"
-              alt="segunda imagen"
-              
-            />
-          </li>
-          <li class="card-imagen3">
-            <img
-              src="images/img (2).jpg"
-              alt="tercera imagen"
-             
-            />
-          </li>
-        </ul>
+
+
+
+
+
+
+      
+      <section>
+        <div class="container section">
+          <h2 class="titulos-segundarios">What we do</h2>
+
+          <ul class="gallery__images list p-0">
+            <li>
+              <img
+                src="images/img.jpg"
+                alt="primer imagen"
+                width="370"
+                height="294"
+                top="1061"
+                left="215"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img (1).jpg"
+                alt="segunda imagen"
+                width="370"
+                height="294"
+                top="1061"
+                left="215"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img (2).jpg"
+                alt="tercera imagen"
+                width="370"
+                height="294"
+                top="1061"
+                left="215"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section-team">
-        <h2 class="titulos-segundarios">Our Team</h2>
+      <section class="card container">
+        <div class="section">
+          <h2 class="titulos-segundarios">Our Team</h2>
 
-        <ul class="flex-container">
-          <li class="card-item">
-            <article class="card-item-img1">
-              <img
-                src="images/card1.jpg"
-                alt="Christopher Walker"
-                width="150px"
-                height="150"
-              />
-              <h4>Christopher Walker</h4>
-              <p>Product Designer</p>
-            </article>
-          </li>
+          <ul class="gallery__progamadores card-items list p-0">
+            <li class="card__item">
+              <article>
+                <img
+                  src="images/card1.jpg"
+                  alt="Christopher Walker"
+                  width="260px"
+                  height="270px"
+                />
+                <h4>Christopher Walker</h4>
+                <p>Product Designer</p>
+              </article>
+            </li>
 
-          <li class="card-item">
-            <article class="card-item-img2">
-              <img
-                src="images/card2.jpg"
-                alt="Kylie Evans"
-                width="150px"
-                height="150"
-              />
-              <h4>Kylie Evans</h4>
-              <p>Frontend Developer</p>
-            </article>
-          </li>
+            <li class="card__item">
+              <article>
+                <img
+                  src="images/card2.jpg"
+                  alt="Kylie Evans"
+                  width="260px"
+                  height="270px"
+                />
+                <h4>Kylie Evans</h4>
+                <p>Frontend Developer</p>
+              </article>
+            </li>
 
-          <li class="card-item">
-            <article class="card-item-img3">
-              <img
-                src="images/card3.jpg"
-                alt="Ryan Harris"
-                width="150px"
-                height="150"
-              />
-              <h4>Ryan Harris</h4>
-              <p>Marketing</p>
-            </article>
-          </li>
+            <li class="card__item">
+              <article>
+                <img
+                  src="images/card3.jpg"
+                  alt="Ryan Harris"
+                  width="260px"
+                  height="270px"
+                />
+                <h4>Ryan Harris</h4>
+                <p>Marketing</p>
+              </article>
+            </li>
 
-          <li class="card-item">
-            <article class="card-item-img4">
-              <img
-                src="images/card4.jpg"
-                alt="Tyler Moore"
-                width="150px"
-                height="150"
-              />
-              <h4>Tyler Moore</h4>
-              <p>UI Designer</p>
-            </article>
-          </li>
-        </ul>
+            <li class="card__item">
+              <article>
+                <img
+                  src="images/card4.jpg"
+                  alt="Tyler Moore"
+                  width="260px"
+                  height="270px"
+                />
+                <h4>Tyler Moore</h4>
+                <p>UI Designer</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
+      <address class="footer container">
+        <div class="text__footer p-0">
+          <a class="webstudio link" href="/index.html">WebStudio</a> <br />
+          <p>695 Park Ave, New York, NY 10065,</p>
+          <p>United States</p>
+        </div>
 
-      <ul class="footer">
-        <li> <a class="webstudio" href="./index.html">WebStudio</a></li>
-        <li> <p>695 Park Ave, New York, NY 10065,</p></li>
-        <li> <p>United States</p> </li>
-        <li> <a class="box" href="mailto:info@devstudio.com"> <address>info@devstudio.com</address> </a></li>
-        <li> <a class="box" href="tel:+12127724150"> <address>++1 212-772-4150</address> </a></li>
-      </ul>
-
-    
-
+        <div class="box_footer">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a href="tel:+12127724150">+1 212-772-4150</a>
+        </div>
+      </address>
     </footer>
   </body>
 </html>
