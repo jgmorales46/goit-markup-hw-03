@@ -391,8 +391,10 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
 */
 
 .item {
+    width: 375px;
+    
 
-    flex-basis: calc((100% - 60px) / 9);
+    flex-basis: calc((100% - 60px) / 3);
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(238, 238, 238);
     border-radius: 4px;
@@ -406,6 +408,7 @@ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
 
 
 .item h4{
+    
     padding-left: 25px;
     color: var(--main--secundario);
         font-family: Roboto;
