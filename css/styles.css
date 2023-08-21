@@ -32,7 +32,8 @@
 }
 
 .hero {
-    background-color: var(--main--backgraundSecundario);
+    /* background-color: var(--main--backgraundSecundario); */
+    background-image: url('../images/fondo-index.png');
 }
 
 :root{
@@ -266,7 +267,8 @@ footer{
 }
 
 .footer {
-    padding: 60px;
+    padding-top: 60px ;
+    padding-bottom: 60px;
     line-height: 24px;
    
 }
@@ -342,28 +344,67 @@ article p{
 }
 
 
-/* -------------------------------------------_______________estilos portafolio__________________________________________-----------------------------------*/
+/* -------------------------------------------_______________estilos portafolio menu__________________________________________-----------------------------------*/
 
 .buttom__portafolio{
     display: flex;
     gap: 15px;
     justify-content: center;
 }
+.container__botones__portafolio{
+    padding-top: 105px;
+}
+
+
+/*____________estilod portafolio imagenes__________________________________________________*/
+
+
 .container__porfolio{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+      flex-wrap: wrap; 
+    gap: 25px; /* verificar gap en cambios mas adelante*/
 }
-.container__botones__portafolio{
-padding: 35px;
-}
+
+
+
+
+
+ /*
+
 .item {
-    /*  Set the width of the elements  */
-    flex-basis: calc((100% - 20px) / 3);
+     Set the width of the elements  
+    flex-basis: calc((100% - 2 * 10px) / 3);
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px
+         rgba(0, 0, 0, 0.12);
+         } */
+ /*
+.item:hover{
+    border: 1px solid #EEE;
+        background: #FFF;
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px 
+         rgba(0, 0, 0, 0.12); 
+          }
+
+*/
+
+.item {
+
+    flex-basis: calc((100% - 60px) / 9);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
 }
+
+.item:hover {
+    box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+
 .item h4{
     padding-left: 25px;
     color: var(--main--secundario);
@@ -387,8 +428,5 @@ padding: 35px;
         /* 187.5% */
         letter-spacing: 0.48px;
 }
-.portfolio__imagenes {
 
-    padding: 35px;
-}
  
