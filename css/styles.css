@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -27,12 +28,18 @@
     padding: 0;
 }
 
+
 .pv-main {
     padding: 40px 0;
 }
 
 .hero {
-    background-color: var(--main--backgraundSecundario);
+    /* background-color: var(--main--backgraundSecundario); */
+
+    background-image: linear-gradient(to bottom,
+    rgba(47,48,58,0.4),
+    rgba(0,0,0,0.4)
+    ), url('../images/fondo-index.png');
 }
 
 :root{
@@ -41,6 +48,7 @@
     --main--textColor:rgb(255, 255, 255);
     --main--backgraundSecundario:rgb(47, 48, 58);
     --main--textSecundario:rgb(117, 117, 117);
+    --main--color--fondo--logos:rgb(245, 244, 250);
     
 }
 
@@ -73,6 +81,10 @@ body{
     align-items: center;
     padding: 25px;
 }
+.hero__navigation a:hover{
+color: var(--main--primaryColor);
+}
+
 
 .hero__contact {
     display: flex;
@@ -80,7 +92,40 @@ body{
     align-items: center;
     column-gap: 16px;
 }
+.hero__contact a:hover {
+    color: var(--main--primaryColor);
+}
 
+/* para revisar esta parte del codigo----------------------*/
+.gallery__item{
+    fill: var(--main--textSecundario);
+}
+.gallery__item:hover{
+    fill: var(--main--primaryColor);
+    cursor: pointer;
+}
+.gallery__item:hover> .icon__logo,
+.gallery__item:focus>.icon__logo,
+.gallery__item:focus-within>.icon__logo {
+    fill: var(--main--primaryColor);
+    cursor: pointer;
+}
+
+.gallery__item:hover>.icon,
+.gallery__item:focus>.icon,
+.gallery__item:focus-within>.icon {
+    fill: var(--main--primaryColor);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/***************************************---------------*******************/
 /* Font Stylesk */
 .link-font-style {
     font-weight: 600;
@@ -103,11 +148,18 @@ header a{
     line-height: 16px;
     font-weight: 500;
 }
-
-header a:hover{
-    color: var(--main--primaryColor);
-   
+.encuentranos{
+    color:var(--main--textColor);
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
 }
+
+
 
                     
 
@@ -177,6 +229,22 @@ header a:hover{
     
 }
 
+.contenedor__logos{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    border-radius: 4px;
+   padding-left: 100px;
+    width: 270px;
+    height: 120px;
+    background: var(--main--color--fondo--logos);
+
+}
+.icon__logo__detalles{
+width: 70px;
+    height: 70px;
+}
+
 /* estilos cuarta section imagenes de referencia*/
 
 
@@ -188,16 +256,99 @@ header a:hover{
 
 /* estilos quinto section  */
 
-.gallery__progamadores {
+.team__list {
     display: flex;
     gap: 30px;
+    
+}
+.card__item{
+    border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+    
+        /* material shadow v1 */
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.card__item h4{
+    margin: 0%;
+    padding-top: 30px;
+}
+.card__item p {
+    margin: 0%;
+    padding-top: 10px;
     
 }
 
 
 
+.icon__tarjetas{
+width: 20px;
+    height: 20px;
+    fill: var(--main--textSecundario);
+}
+
+.icon__tarjetas:hover {
+    width: 20px;
+    height: 20px;
+    fill: var(--main--textColor);
+}
+
+
+.icons__list{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 32px 30px 32px;
+    
+
+    
+}
+.icons__item{
+    width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        /* padding: 12px; */
+        background: var(--main--textColor);
+        border-radius: 50%;
+}
+
+
+.icons__item:hover> .icons__link, 
+.icons__item:focus >.icons__link,
+.icons__item:focus-within >.icons__link{
+    background-color: var(--main--primaryColor);
+    cursor: pointer;
+    outline: none;
+}
+
+
+.icons__item:hover .iconos,
+.icons__item:focus .iconos,
+.icons__item:focus-within .iconos{
+    fill: var(--main--textColor);
+}
+
+.icons__link{
+    background-color: var(--main--color--fondo--logos);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main--textSecundario);
+}
+
+
+
+/*************************---------------------------********************************/
+
 .card {
-    background: var(--main--textColor);
+     background: var(--main--color--fondo--logos); 
+   
 }
 
 .card h4 {
@@ -222,12 +373,22 @@ header a:hover{
 
 }
 
-.card__item {
-    border-radius: 0px 0px 4px 4px;
-    background: #FFF;
+.team__list .team__item {
+
+    width: 370px;
+    flex-basis: calc((100%-30px*2)/3);
+    height: 502px;
+
+    /* border-radius: 0px 0px 4px 4px; */
+    /* background: #FFF; */
 
     /* material shadow v1 */
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
+}
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
@@ -266,8 +427,11 @@ footer{
 }
 
 .footer {
-    padding: 60px;
+    padding-top: 60px ;
+    padding-bottom: 60px;
     line-height: 24px;
+    display: flex;
+    
    
 }
 
@@ -287,15 +451,12 @@ footer{
                           /*  estilos foooter*/
                           /*revisar este codigo, el porque no me aparece la mano del cursor */
 
-.box_header a{
+.box__header a{
 
      color: var(--main--textSecundario);
 }
 
-.box_header a:hover {
-    color: var(--main--primaryColor);
-    
-}
+
 
 
 
@@ -341,30 +502,58 @@ article p{
     margin: 0px;
 }
 
+.icons__list__footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 32px 30px 32px;
 
-/* -------------------------------------------_______________estilos portafolio__________________________________________-----------------------------------*/
+/* -------------------------------------------_______________estilos portafolio menu__________________________________________-----------------------------------*/
 
 .buttom__portafolio{
     display: flex;
     gap: 15px;
     justify-content: center;
 }
+.container__botones__portafolio{
+    padding-top: 105px;
+}
+
+
+/*____________estilod portafolio imagenes__________________________________________________*/
+
+
 .container__porfolio{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+      flex-wrap: wrap; 
+    gap: 25px; /* verificar gap en cambios mas adelante*/
 }
-.container__botones__portafolio{
-padding: 35px;
-}
+
+
+
+
+
 .item {
-    /*  Set the width of the elements  */
-    flex-basis: calc((100% - 20px) / 3);
+    width: 375px;
+    
+
+    flex-basis: calc((100% - 60px) / 3);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
+.item:hover {
+    box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+
 .item h4{
+    
     padding-left: 25px;
     color: var(--main--secundario);
         font-family: Roboto;
@@ -387,8 +576,42 @@ padding: 35px;
         /* 187.5% */
         letter-spacing: 0.48px;
 }
-.portfolio__imagenes {
 
-    padding: 35px;
+/*************clientes regulares 6 section***********************/ 
+.titulo__clientes{
+    text-align: center;
+    color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+
 }
- 
+.container__clientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items__clientes{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.icon__clientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    height: 92px;
+    width: 170px;
+    background-color: red;
+    border-radius: 4px;
+     border: 1px solid #AFB1B8;
+    
+}
