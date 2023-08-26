@@ -27,7 +27,9 @@
 .p-0 {
     padding: 0;
 }
-
+.m-0{
+    margin: 0%;
+}
 
 .pv-main {
     padding: 40px 0;
@@ -92,33 +94,58 @@ color: var(--main--primaryColor);
     align-items: center;
     column-gap: 16px;
 }
+
+
+/* para revisar esta parte del codigo email contactos----------------------*/
+
+
 .hero__contact a:hover {
     color: var(--main--primaryColor);
 }
 
-/* para revisar esta parte del codigo----------------------*/
-.gallery__item{
-    fill: var(--main--textSecundario);
-}
-.gallery__item:hover{
-    fill: var(--main--primaryColor);
-    cursor: pointer;
-}
-.gallery__item:hover> .icon__logo,
-.gallery__item:focus>.icon__logo,
-.gallery__item:focus-within>.icon__logo {
-    fill: var(--main--primaryColor);
-    cursor: pointer;
-}
-
-.gallery__item:hover>.icon,
-.gallery__item:focus>.icon,
-.gallery__item:focus-within>.icon {
-    fill: var(--main--primaryColor);
-    cursor: pointer;
-}
 
 
+
+
+.hero__contact .gallery__item .icon__logo  .icon .email{
+  fill: var(--main--primaryColor);
+  width: 20px;
+  height: 12px;
+}
+header .container .contacts-menu li .item .icon.smartphone {
+  fill: var(--primary-text-color);
+  width: 10px;
+  height: 17px;
+}
+
+ .hero__navigation .page:hover,
+ .hero__navigation .page:focus,
+ .hero__navigation .page.current,
+ .hero__contact  .gallery__item:hover,
+ .hero__contact  .gallery__item:focus,
+ .hero__contact  .gallery__item:hover .icon {
+  color: var(--main--primaryColor);
+  fill: #03a9f4;
+}
+
+/* para revisar esta parte del codigo logos empresas que trabajan con nosotros ----------------------*/
+
+.icon__clientes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    height: 92px;
+    width: 170px;
+    border-radius: 4px;
+     border: 1px solid #AFB1B8;
+     fill: #AFB1B8;
+}
+.container__clientes .icon__clientes:hover{
+    fill: var(--main--primaryColor);
+    border: 1px solid var(--main--primaryColor);
+}
 
 
 
@@ -157,7 +184,19 @@ header a{
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        padding-bottom: 20px;
 }
+.icons__link{
+    background-color: var(--main--color--fondo--logos);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main--textSecundario);
+}
+
 
 
 
@@ -463,13 +502,13 @@ footer{
 /****************************************************************************************estilos pagina portfolio******************************************************/
 
 
-article h4{
+.article h4{
     font-size: 18px;
     color: #212121;
     line-height: 30px;
 }
 
-article p{
+.article p{
     font-size: 16px;
     color: var(--main--textSecundario);
     line-height: 30px;
@@ -501,6 +540,11 @@ article p{
 .text__footer p{
     margin: 0px;
 }
+.container__redes__footer{
+    padding-left: 100px;
+    
+    
+}
 
 .icons__list__footer {
     display: flex;
@@ -508,7 +552,9 @@ article p{
     align-content: center;
     gap: 10px;
     width: 100%;
-    padding: 16px 32px 30px 32px;
+   
+}
+
 
 /* -------------------------------------------_______________estilos portafolio menu__________________________________________-----------------------------------*/
 
@@ -517,6 +563,7 @@ article p{
     gap: 15px;
     justify-content: center;
 }
+
 .container__botones__portafolio{
     padding-top: 105px;
 }
@@ -602,16 +649,5 @@ display: flex;
     gap: 30px;
 
 }
-.icon__clientes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    cursor: pointer;
-    height: 92px;
-    width: 170px;
-    background-color: red;
-    border-radius: 4px;
-     border: 1px solid #AFB1B8;
-    
-}
+
+
