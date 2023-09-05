@@ -35,6 +35,7 @@
 }
 
 .hero {
+<<<<<<< HEAD
   /* background-color: var(--main--backgraundSecundario); */
 
   background-image: linear-gradient(
@@ -43,6 +44,9 @@
       rgba(0, 0, 0, 0.4)
     ),
     url("../images/fondo-index.png");
+=======
+    /* background-color: var(--main--backgraundSecundario); */
+>>>>>>> c56e6532aab63e8e3761c5c6c3bafde00249611a
 }
 
 :root {
@@ -416,10 +420,14 @@ footer {
 }
 
 .footer {
+<<<<<<< HEAD
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 24px;
   display: flex;
+=======
+   
+>>>>>>> c56e6532aab63e8e3761c5c6c3bafde00249611a
 }
 
 .footer p {
@@ -495,6 +503,7 @@ footer {
   gap: 15px;
   justify-content: center;
 }
+<<<<<<< HEAD
 
 .container__botones__portafolio {
   padding-top: 105px;
@@ -569,3 +578,83 @@ footer {
   justify-content: space-between;
   gap: 30px;
 }
+=======
+.container__botones__portafolio{
+    padding-top: 105px;
+}
+
+
+/*____________estilod portafolio imagenes__________________________________________________*/
+
+
+}
+
+
+
+
+
+ /*
+
+.item {
+     Set the width of the elements  
+    flex-basis: calc((100% - 2 * 10px) / 3);
+    border-radius: 4px;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px
+         rgba(0, 0, 0, 0.12);
+         } */
+ /*
+.item:hover{
+    border: 1px solid #EEE;
+        background: #FFF;
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px 
+         rgba(0, 0, 0, 0.12); 
+          }
+
+*/
+
+.item {
+    width: 375px;
+    
+
+    flex-basis: calc((100% - 60px) / 3);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+}
+
+.item:hover {
+    box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+.item h4{
+    
+    padding-left: 25px;
+    color: var(--main--secundario);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        
+        /* 200% */
+        letter-spacing: 1.08px;
+}
+
+.item p {
+    padding-left: 25px;
+    color:var(--main--textSecundario);
+        font-family: Roboto;
+        font-size: 16px;
+       
+        font-weight: 400;
+        
+        /* 187.5% */
+        letter-spacing: 0.48px;
+}
+
+ 
+>>>>>>> c56e6532aab63e8e3761c5c6c3bafde00249611a
